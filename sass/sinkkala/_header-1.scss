@@ -125,6 +125,54 @@ top:0;left:0;
 	border-right:1px solid #dfcea1
 }
 .preheader .phone a, .preheader .phone  {color:#c28861;}
+
+
+.preheader .language  {
+    float:right;
+    line-height:30px;
+    height:45px;
+    //border-right:1px solid #dfcea1;
+    margin-right:0;
+    position:relative;
+    padding-right:20px;
+    list-style: none outside none;
+    margin: 0;
+
+    a {
+        color:#c28861;
+        position:relative;
+        top:10px;
+        position:relative;
+        text-decoration: none;
+
+        &:before {
+            font-size:22px;
+            line-height:25px;
+            padding:0 5px 0 5px;
+        }
+    }
+
+    .flag-icon {
+        background-repeat: no-repeat;
+        @include box-shadow(0 0 2px black);
+        display: inline-block;
+        height: 11px;
+        margin-left: 12px;
+        width: 16px;
+
+        @each $lang in fi, sv, ru, de, en {
+            &.#{$lang} {
+                background-image: image-url("flag/#{$lang}.png");
+            }
+        }
+    }
+}
+.lt-ie9 .preheader .language {
+    margin-right:0;
+    padding-right:20px;
+}
+
+/*
 .preheader .social  {
 	float:right;
 	line-height:30px;
@@ -157,6 +205,7 @@ top:0;left:0;
 .preheader .social .tooltip.bottom .tooltip-arrow {
 	border-bottom-color:#dfcea1
 }
+*/
 
 /* main navigation / desktop styles
 ================================================== */
