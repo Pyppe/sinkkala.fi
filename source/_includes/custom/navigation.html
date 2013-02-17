@@ -1,0 +1,14 @@
+<ul class="main-navigation">
+{% if page.url contains '/en/' %}
+  <li><a href="{{ root_url }}/en/">Frontpage</a></li>
+  <li><a href="{{ root_url }}/en/prices/">Prices</a></li>
+{% else %}
+
+  {% if page.url contains '/sv/' %}
+    <li><a href="#">Framsida</a></li>
+  {% else %}
+    <li><a href="#">Etusivu</a></li>
+  {% endif %}
+
+{% endif %}
+</ul>
