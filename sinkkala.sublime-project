@@ -1,0 +1,9 @@
+{
+	"folders":
+	[
+		{
+			"path": "/home/pyppe/dev/sinkkala.fi",
+			"folder_exclude_patterns": ["public", ".sass-cache", ".themes"]
+		}
+	]
+}

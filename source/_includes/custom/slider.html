@@ -1,0 +1,31 @@
+<div id="frontpageSlider"></div>
+
+{% raw %}
+<script id="frontpageSliderTemplate" type="text/x-handlebars-template">
+	<div class="lemmon-wrap clearfix">
+		<div id="lemmon-slider" class="lemmon-slider">
+			<ul>
+				{{#each .}}
+				<li>
+					<a href="{{fullscreenUrl}}"> 
+						<img src="{{url}}" alt="" />
+					</a>
+					{{#if title}}
+					<div class="summary"> 
+						<a href="{{fullscreenUrl}}">
+							<h3>{{title}}</h3>
+							<p>{{description}}</p>
+						</a>
+					</div>
+					{{/if}}
+				</li>
+				{{/each}}
+			</ul>
+		</div>
+		<div class="controls">
+			<a href="#" class="prev-page">Prev Page</a>
+			<a href="#" class="next-page">Next Page</a>
+		</div>
+	</div>
+</script>
+{% endraw %}

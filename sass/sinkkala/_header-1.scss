@@ -150,6 +150,17 @@ top:0;left:0;
             line-height:25px;
             padding:0 5px 0 5px;
         }
+
+        opacity: 0.5;
+
+        &.selected {
+            opacity: 1;
+            font-weight: bold;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
     }
 
     .flag-icon {
