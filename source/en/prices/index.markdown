@@ -7,7 +7,7 @@ sharing: true
 footer: true
 ---
 
-<table>
+<table class="table table-striped">
   <thead></thead>
   <tbody>
     <tr>

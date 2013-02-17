@@ -2,6 +2,19 @@
 layout: default
 ---
 
+{% if page.title %}
+<div class="hero-unit">
+  <div class="container">
+    <h2>{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h2>
+  </div>
+</div>
+{% endif %}
+<div class="container clearfix" id="main-content">
+  {{ content }}
+</div>
+
+
+{% comment %}
 <div>
 <article role="article">
   {% if page.title %}
@@ -40,3 +53,5 @@ layout: default
   {% endif %}
 </aside>
 {% endunless %}
+
+{% endcomment %}
